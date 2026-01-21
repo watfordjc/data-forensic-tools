@@ -13,4 +13,16 @@ if ! shellcheck ./adb/texts/get-sms-fields.sh; then
     exit 1
 fi
 
+echo "--- ./adb/texts/extract-call.sh check ---"
+if ! shellcheck ./adb/calls/extract-call.sh; then
+    echo "ERROR: ShellCheck failed. Fix the script before committing."
+    exit 1
+fi
+
+echo "--- ./adb/texts/get-call-fields.sh check ---"
+if ! shellcheck ./adb/calls/get-call-fields.sh; then
+    echo "ERROR: ShellCheck failed. Fix the script before committing."
+    exit 1
+fi
+
 echo "ShellCheck passed. Proceeding with Signed Commit..."

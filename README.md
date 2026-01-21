@@ -10,6 +10,11 @@ A suite of forensic extraction and verification tools designed for auditable dat
 - **Verification:** GPG Detached Signatures & RFC 3161 Trusted Timestamps.
 - **Output:** ISO-8601 JSON (Millisecond precision).
 
+### [Call Extraction](./adb/calls/extract-call.sh)
+- **Source:** Android Content Providers (`content://call_log/calls`)
+- **Verification:** GPG Detached Signatures & RFC 3161 Trusted Timestamps.
+- **Output:** ISO-8601 JSON (Millisecond precision).
+
 ### [Firefox Android Backup](https://github.com/watfordjc/firefox-android-backup-restore)
 - **Source:** External Submodule (Rob--W)
 - **Purpose:** Recovery of `places.sqlite` and session data from Android Firefox.
