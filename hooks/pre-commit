@@ -1,0 +1,16 @@
+#!/bin/bash
+# Pre-commit hook to validate scripts
+
+echo "--- ./adb/texts/extract-sms.sh check ---"
+if ! shellcheck ./adb/texts/extract-sms.sh; then
+    echo "ERROR: ShellCheck failed. Fix the script before committing."
+    exit 1
+fi
+
+echo "--- ./adb/texts/get-sms-fields.sh check ---"
+if ! shellcheck ./adb/texts/get-sms-fields.sh; then
+    echo "ERROR: ShellCheck failed. Fix the script before committing."
+    exit 1
+fi
+
+echo "ShellCheck passed. Proceeding with Signed Commit..."

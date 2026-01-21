@@ -1,0 +1,26 @@
+# --- OS/Editor Noise ---
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+
+# --- Forensic Working Files (DO NOT COMMIT ACTUAL DATA) ---
+# We ignore the specific JSON/XML/LOG outputs to prevent PII leakage to GitHub
+*.json
+*.xml
+*.log
+*.asc
+*.tsr
+*.tsq
+*.db
+*.sqlite
+
+# --- Temporary/Mktemp Files ---
+/tmp/
+txSearch*
+json2xml-*
+
+# --- Environment/Identity ---
+# If you ever use a .env for API keys or local paths
+.env

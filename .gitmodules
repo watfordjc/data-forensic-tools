@@ -1,0 +1,3 @@
+[submodule "vendors/firefox-restore"]
+	path = vendors/firefox-restore
+	url = https://github.com/watfordjc/firefox-android-backup-restore
