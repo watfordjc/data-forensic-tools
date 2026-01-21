@@ -43,7 +43,7 @@ fi
 	echo "$CMD"
 	echo
 	BODY_RAW=$(eval "$CMD")
-	BODY_HASH=$(echo "$BODY_CLEAN" | sha256sum | awk '{print $1}')
+	BODY_HASH=$(echo "$BODY_RAW" | sha256sum | awk '{print $1}')
 	echo "--- Body Hash ---"
 	echo "SHA2-256: $BODY_HASH"
 } > "$LOG_FILE"
